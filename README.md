@@ -39,3 +39,9 @@ python nested_ner_train.py
 ```
 python nested_ner_predict.py
 ```
+# 结果
+这里只对f1值进行了统计。
+| 数据集 | train | dev | test |
+| :------:| :------: | :------: | :------: |
+| CLUENER | 90.721 | 80.412 | 79.340 |
+| GENIA |  |  |  |
