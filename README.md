@@ -25,7 +25,7 @@ bert4keras==0.10.6</br>
 2.构建数据集</br>
 &emsp;&emsp;中文：将下载的[cluener数据集](https://storage.googleapis.com/cluebenchmark/tasks/cluener_public.zip)放到data/cluener/raw_data文件夹下</br>
 &emsp;&emsp;&emsp;&emsp;&emsp;运行generate_label.py生成entity_label.json</br>
-&emsp;&emsp;英文：将下载的[genia数据集](http://www.nactem.ac.uk/GENIA/current/GENIA-corpus/Part-of-speech/GENIAcorpus3.02p.tgz)放到data/GENIA/raw_data/genia文件夹下，</br>
+&emsp;&emsp;英文：将下载的genia数据集放到data/GENIA/raw_data/genia文件夹下，</br>
 &emsp;&emsp;&emsp;&emsp;&emsp;运行parse_genia.py，生成的数据将会放在data/GENIA/raw_data/processed_genia文件夹下</br>
 &emsp;&emsp;&emsp;&emsp;&emsp;运行gen_data_for_genia.py，生成的genia_train.json、genia_dev.json、genia_test.json数据会放在data/GENIA/data文件夹下</br>
 &emsp;&emsp;&emsp;&emsp;&emsp;运行generate_label.py，生成entity_label.json</br>
