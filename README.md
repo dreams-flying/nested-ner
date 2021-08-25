@@ -26,9 +26,11 @@ bert4keras==0.10.6</br>
 &emsp;&emsp;中文：将下载的[cluener数据集](https://storage.googleapis.com/cluebenchmark/tasks/cluener_public.zip)放到data/cluener/raw_data文件夹下</br>
 &emsp;&emsp;&emsp;&emsp;&emsp;运行generate_label.py生成entity_label.json</br>
 &emsp;&emsp;英文：将下载的genia数据集放到data/GENIA/raw_data/genia文件夹下，</br>
-&emsp;&emsp;&emsp;&emsp;&emsp;运行parse_genia.py，生成的数据将会放在data/GENIA/raw_data/processed_genia文件夹下</br>
-&emsp;&emsp;&emsp;&emsp;&emsp;运行gen_data_for_genia.py，生成的genia_train.json、genia_dev.json、genia_test.json数据会放在data/GENIA/data文件夹下</br>
-&emsp;&emsp;&emsp;&emsp;&emsp;运行generate_label.py，生成entity_label.json</br>
+&emsp;&emsp;&emsp;&emsp;&emsp;a.运行```parse_genia.py```，生成的数据将会放在data/GENIA/raw_data/processed_genia文件夹下</br>
+&emsp;&emsp;&emsp;&emsp;&emsp;b.运行```gen_data_for_genia.py```，</br>
+&emsp;&emsp;&emsp;&emsp;&emsp;生成的genia_train.json、genia_dev.json、genia_test.json数据会放在data/GENIA/data文件夹下</br>
+&emsp;&emsp;&emsp;&emsp;&emsp;c.运行```generate_label.py```，生成entity_label.json</br>
+&emsp;&emsp;英文数据的处理参考[nested-ner-tacl2020-transformers](https://github.com/yahshibu/nested-ner-tacl2020-transformers)项目的数据处理。</br>
 3.训练模型</br>
 ```
 python nested_ner_train.py
